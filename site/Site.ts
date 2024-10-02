@@ -4,23 +4,23 @@ import type { Building } from '../building/Building';
 /**
  * SiteData interface
  * @typedef {Object} SiteData
- * @property {AddressWithGeoLatLong} Address - The address of the site
- * @property {string} SiteName - The name of the site
+ * @property {AddressWithGeoLatLong} address - The address of the site
+ * @property {string} siteName - The name of the site
  * @see {@link AddressWithGeoLatLong}
  */
 interface SiteData {
-  Address: AddressWithGeoLatLong
-  SiteName: string;
+  address: AddressWithGeoLatLong
+  siteName: string;
 }
 
 /**
  * SiteData interface with building information
  * @typedef {Object} SiteDataWithBuildingInformation
- * @property {Building[]} Buildings - The buildings of the site
+ * @property {Building[]} buildings - The buildings of the site
  * @see {@link Building}
  */
 interface SiteDataWithBuildingInformation extends SiteData {
-  Buildings?: Building[];
+  buildings?: Building[];
 }
 
 /**

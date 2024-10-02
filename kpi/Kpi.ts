@@ -12,61 +12,61 @@ export type LangString = {
 /**
  * Calculation value type
  * @typedef {Object} CalculationValue
- * @property {string} PhysicalUnit - The physical unit of the calculation value
- * @property {string} CalculationType - The calculation type of the calculation value
- * @property {number} PresentValue - The present value of the calculation value
+ * @property {string} physicalUnit - The physical unit of the calculation value
+ * @property {string} calculationType - The calculation type of the calculation value
+ * @property {number} presentValue - The present value of the calculation value
  */
 export type CalculationValue = {
-  PhysicalUnit: string;
-  CalculationType: string;
-  PresentValue: number;
+  physicalUnit: string;
+  calculationType: string;
+  presentValue: number;
 };
 
 /**
  * Accumulated values type
  * @typedef {Object} AccumulatedValues
- * @property {CalculationValue} AnnualValue - The annual value of the accumulated values
- * @property {CalculationValue} MonthlyValue - The monthly value of the accumulated values
- * @property {CalculationValue} DailyValue - The daily value of the accumulated values
+ * @property {CalculationValue} annualValue - The annual value of the accumulated values
+ * @property {CalculationValue} monthlyValue - The monthly value of the accumulated values
+ * @property {CalculationValue} dailyValue - The daily value of the accumulated values
  */
 export type AccumulatedValues = {
-  AnnualValue: CalculationValue;
-  MonthlyValue: CalculationValue;
-  DailyValue: CalculationValue;
+  annualValue: CalculationValue;
+  monthlyValue: CalculationValue;
+  dailyValue: CalculationValue;
 };
 
 /**
  * Property references type
  * @typedef {Object} PropertyReferences
- * @property {Array} BuildingSurface - The building surface property references
- * @property {Array} Waterconsumption - The water consumption property references
+ * @property {Array} buildingSurface - The building surface property references
+ * @property {Array} waterconsumption - The water consumption property references
  */
 export type PropertyReferences = {
-  BuildingSurface: Array<any>; // TODO: Define type
-  Waterconsumption: Array<any>; // TODO: Define type
+  buildingSurface: Array<any>; // TODO: Define type
+  waterconsumption: Array<any>; // TODO: Define type
 };
 
 /**
  * Annotation type
  * @typedef {Object} Annotation
- * @property {string} AnnotationText - The annotation text
- * @property {string} TimestampOfCreation - The timestamp of creation of the annotation
- * @property {string} ReferringTimestamp - The referring timestamp of the annotation
- * @property {string} Creator - The creator of the annotation
- * @property {boolean} MadeByEntendix - The annotation was made by Entendix
- * @property {boolean} MadeByAi - The annotation was made by AI
- * @property {boolean} MadeByUser - The annotation was made by the user
- * @property {string} AnnotationType - The annotation type
+ * @property {string} annotationText - The annotation text
+ * @property {string} timestampOfCreation - The timestamp of creation of the annotation
+ * @property {string} referringTimestamp - The referring timestamp of the annotation
+ * @property {string} creator - The creator of the annotation
+ * @property {boolean} madeByEntendix - The annotation was made by Entendix
+ * @property {boolean} madeByAi - The annotation was made by AI
+ * @property {boolean} madeByUser - The annotation was made by the user
+ * @property {string} annotationType - The annotation type
  */
 export type Annotation = {
-  AnnotationText: string;
-  TimestampOfCreation: string;
-  ReferringTimestamp: string;
-  Creator: string;
-  MadeByEntendix: boolean;
-  MadeByAi: boolean;
-  MadeByUser: boolean;
-  AnnotationType: string;
+  annotationText: string;
+  timestampOfCreation: string;
+  referringTimestamp: string;
+  creator: string;
+  madeByEntendix: boolean;
+  madeByAi: boolean;
+  madeByUser: boolean;
+  annotationType: string;
 };
 
 /**
@@ -77,24 +77,24 @@ export type Annotation = {
  * @property {LangString} data.name - The name of the KPI
  * @property {LangString} data.context - The context of the KPI
  * @property {CalculationValue} data.value - The value of the KPI
- * @property {AccumulatedValues} data.AccumulatedValues - The accumulated values of the KPI
- * @property {Array} data.ConstantVariables - The constant variables of the KPI
- * @property {PropertyReferences} data.PropertyReferences - The property references of the KPI
- * @property {Array} data.Limits - The limits of the KPI
- * @property {number} data.CalculationCycle - The calculation cycle of the KPI
- * @property {Array} data.Annotations - The annotations of the KPI
+ * @property {AccumulatedValues} data.accumulatedValues - The accumulated values of the KPI
+ * @property {Array} data.constantVariables - The constant variables of the KPI
+ * @property {PropertyReferences} data.propertyReferences - The property references of the KPI
+ * @property {Array} data.limits - The limits of the KPI
+ * @property {number} data.calculationCycle - The calculation cycle of the KPI
+ * @property {Array} data.annotations - The annotations of the KPI
  */
 export type Kpi = {
   id: string;
   data: {
-    Name: LangString;
-    Context: LangString;
-    Value: CalculationValue;
-    AccumulatedValues: AccumulatedValues;
-    ConstantVariables: Array<any>; // TODO: Define type
-    PropertyReferences: PropertyReferences;
-    Limits: Array<string>; // TODO: Define type
-    CalculationCycle: number;
-    Annotations: Array<Annotation>;
+    name: LangString;
+    context: LangString;
+    value: CalculationValue;
+    accumulatedValues: AccumulatedValues;
+    constantVariables: Array<any>; // TODO: Define type
+    propertyReferences: PropertyReferences;
+    limits: Array<string>; // TODO: Define type
+    calculationCycle: number;
+    annotations: Array<Annotation>;
   };
 };

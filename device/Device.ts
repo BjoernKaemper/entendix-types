@@ -6,10 +6,10 @@ export type Record = {
 };
 
 export type DataPoint = {
-  PresentValue: number;
-  Unit: string;
-  Description: LangString;
-  Datasource: Array<Record>;
+  presentValue: number;
+  unit: string;
+  description: LangString;
+  datasource: Array<Record>;
 };
 
 export type Device = {
