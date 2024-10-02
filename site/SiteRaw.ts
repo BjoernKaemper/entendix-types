@@ -13,7 +13,7 @@ export interface SiteAddressRawItem {
  * @typedef {Array<SiteAddressRawItem>} SiteAddressRaw
  * @see {@link SiteAddressRawItem}
  */
-interface SiteAddressRaw extends Array<SiteAddressRawItem>{}
+interface SiteAddressRaw extends Array<SiteAddressRawItem> {}
 
 /**
  * SiteRaw interface

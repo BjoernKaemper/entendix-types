@@ -15,7 +15,7 @@ export interface SubsectionPlantRawItem {
  * @typedef {Array<PlantRawItem>} PlantRaw
  * @see {@link PlantRawItem}
  */
-interface SubsectionPlantRaw extends Array<SubsectionPlantRawItem>{}
+interface SubsectionPlantRaw extends Array<SubsectionPlantRawItem> {}
 
 /**
  * SubsectionRaw interface

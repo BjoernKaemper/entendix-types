@@ -13,7 +13,7 @@ export interface CompanyAddressRawItem {
  * @typedef {Array<CompanyAddressRawItem>} CompanyAddressRaw
  * @see {@link CompanyAddressRawItem}
  */
-interface CompanyAddressRaw extends Array<CompanyAddressRawItem>{}
+interface CompanyAddressRaw extends Array<CompanyAddressRawItem> {}
 
 /**
  * CompanyRaw interface

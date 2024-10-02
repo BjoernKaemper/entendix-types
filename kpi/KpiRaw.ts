@@ -2,10 +2,10 @@ export interface KpiRawItem {
   [key: string]: string;
 }
 
-export interface KpiNameRaw extends Array<KpiRawItem>{}
-export interface KpiContextRaw extends Array<KpiRawItem>{}
-export interface KpiValueRaw extends Array<KpiRawItem>{}
-export interface KpiAnnotationRaw extends Array<KpiRawItem>{}
+export interface KpiNameRaw extends Array<KpiRawItem> {}
+export interface KpiContextRaw extends Array<KpiRawItem> {}
+export interface KpiValueRaw extends Array<KpiRawItem> {}
+export interface KpiAnnotationRaw extends Array<KpiRawItem> {}
 
 export interface KpiRaw {
   id: string;

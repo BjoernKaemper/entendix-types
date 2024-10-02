@@ -1,4 +1,4 @@
 export enum ChartTypes {
-  NONE = "None",
-  LINE = "LineChart"
+  NONE = 'None',
+  LINE = 'LineChart'
 }

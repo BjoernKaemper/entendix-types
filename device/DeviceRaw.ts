@@ -10,4 +10,4 @@ export interface DeviceRawItem {
 
 
 
-export interface DeviceRaw extends Array<DeviceRawItem>{}
+export interface DeviceRaw extends Array<DeviceRawItem> {}
