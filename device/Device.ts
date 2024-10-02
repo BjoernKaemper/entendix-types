@@ -15,7 +15,7 @@ export type DataPoint = {
 export type Device = {
   id: string;
   data: {
-    [key: string]: any; //TODO: should be [key: string]: DataPoint;
+    [key: string]: any; // TODO: should be [key: string]: DataPoint;
     level: number;
     parentChain: Array<string>;
   };

@@ -8,6 +8,4 @@ export interface DeviceRawItem {
   [key: string]: string;
 }
 
-
-
 export interface DeviceRaw extends Array<DeviceRawItem> {}
