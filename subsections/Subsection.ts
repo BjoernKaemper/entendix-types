@@ -1,5 +1,5 @@
 import { ConditionTypes } from '../enums/ConditionTypes';
-import { SubsectionPlant } from '../subsections/SubsectionPlant';
+import type { SubsectionPlant } from '../subsections/SubsectionPlant';
 
 /**
  * Subsection interface

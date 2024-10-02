@@ -1,6 +1,5 @@
-import { AddressWithGeoLatLong } from '../general/Address';
-import { Building } from '../building/Building';
-
+import type { AddressWithGeoLatLong } from '../general/Address';
+import type { Building } from '../building/Building';
 
 /**
  * SiteData interface

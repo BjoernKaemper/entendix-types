@@ -1,4 +1,3 @@
-
 export interface KpiRawItem {
   [key: string]: string;
 }

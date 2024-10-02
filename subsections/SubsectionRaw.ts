@@ -24,6 +24,7 @@ interface SubsectionPlantRaw extends Array<SubsectionPlantRawItem>{}
  * @property {string} TradeName - The trade name of the subsection
  * @property {string} TradeType - The trade type of the subsection
  * @property {PlantRaw} Plants - The plants of the subsection
+ * @property {PlantRaw} Plants - The plants of the subsection
  */
 export interface SubsectionRaw {
   Condition: ConditionTypes;

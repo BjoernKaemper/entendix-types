@@ -1,5 +1,5 @@
-import { AddressWithGeoLatLong } from '../general/Address';
-import { BuildingSubsection } from './BuildingSubsection';
+import type { AddressWithGeoLatLong } from '../general/Address';
+import type { BuildingSubsection } from './BuildingSubsection';
 
 /**
  * Building interface

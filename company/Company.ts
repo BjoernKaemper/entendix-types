@@ -1,4 +1,4 @@
-import { Address } from '../general/Address';
+import type { Address } from '../general/Address';
 
 /**
  * Company interface

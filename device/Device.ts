@@ -1,4 +1,4 @@
-import { LangString } from '../kpi/Kpi';
+import type { LangString } from '../kpi/Kpi';
 
 export type Record = {
   type: string;

@@ -1,4 +1,3 @@
-
 /**
  * Site address raw interface
  * @typedef {Object} SiteAddressRaw
@@ -30,4 +29,3 @@ export interface SiteRaw {
     SiteName: string;
   };
 }
-
