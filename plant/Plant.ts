@@ -1,5 +1,5 @@
 import { ConditionTypes } from '../enums/ConditionTypes';
-import { Module } from '../module/Module';
+import type { Module } from '../module/Module';
 
 /**
  * Plant interface

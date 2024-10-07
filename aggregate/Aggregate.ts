@@ -1,4 +1,4 @@
-import { ConditionTypes } from "../enums/ConditionTypes";
+import { ConditionTypes } from '../enums/ConditionTypes';
 
 /**
  * Aggregate interface
@@ -15,5 +15,5 @@ export interface Aggregate {
     aggregateName: string;
     aggregateType: string;
     condition?: ConditionTypes;
-  }
+  };
 }

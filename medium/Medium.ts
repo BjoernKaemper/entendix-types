@@ -1,5 +1,5 @@
-import { Aggregate } from "../aggregate/Aggregate";
-import { ConditionTypes } from "../enums/ConditionTypes";
+import type { Aggregate } from '../aggregate/Aggregate';
+import { ConditionTypes } from '../enums/ConditionTypes';
 
 /**
  * Medium interface
@@ -17,6 +17,6 @@ export interface Medium {
     mediumName: string;
     mediumType: string;
     condition?: ConditionTypes;
-    aggregates?: Array<Aggregate>
-  }
+    aggregates?: Array<Aggregate>;
+  };
 }

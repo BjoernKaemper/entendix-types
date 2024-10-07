@@ -1,5 +1,5 @@
-import { ConditionTypes } from "../enums/ConditionTypes";
-import { Medium } from "../medium/Medium";
+import { ConditionTypes } from '../enums/ConditionTypes';
+import type { Medium } from '../medium/Medium';
 
 /**
  * Module interface
@@ -17,6 +17,6 @@ export interface Module {
     moduleName: string;
     moduleType: string;
     condition?: ConditionTypes;
-    mediums?: Array<Medium>
-  }
+    mediums?: Array<Medium>;
+  };
 }
