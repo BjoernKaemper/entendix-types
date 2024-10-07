@@ -1,9 +1,5 @@
 export enum ConditionTypes {
-  NORMAL = 'NORMAL',
+  HEALTHY = 'HEALTHY',
   WARNING = 'WARNING',
   ALERT = 'ALERT',
-  SUCCESS = 'SUCCESS',
-  DANGER = 'DANGER',
-  ERROR = 'ERROR',
-  INFO = 'INFO',
 }
