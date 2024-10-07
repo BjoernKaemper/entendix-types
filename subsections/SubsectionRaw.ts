@@ -2,7 +2,7 @@ import { ConditionTypes } from '../enums/ConditionTypes';
 
 /**
  * Plant raw interface
- * @typedef {Object} PlantRawItem
+ * @typedef {Object} SubsectionPlantRawItem
  * @property {string} key - The key of the plant
  * @property {string} value - The value of the plant
  */
@@ -12,7 +12,7 @@ export interface SubsectionPlantRawItem {
 
 /**
  * Plant raw interface
- * @typedef {Array<PlantRawItem>} PlantRaw
+ * @typedef {Array<SubsectionPlantRawItem>} SubsectionPlantRaw
  * @see {@link PlantRawItem}
  */
 interface SubsectionPlantRaw extends Array<SubsectionPlantRawItem> {}
@@ -23,7 +23,6 @@ interface SubsectionPlantRaw extends Array<SubsectionPlantRawItem> {}
  * @property {ConditionTypes} Condition - The condition of the subsection
  * @property {string} TradeName - The trade name of the subsection
  * @property {string} TradeType - The trade type of the subsection
- * @property {PlantRaw} Plants - The plants of the subsection
  * @property {PlantRaw} Plants - The plants of the subsection
  */
 export interface SubsectionRaw {

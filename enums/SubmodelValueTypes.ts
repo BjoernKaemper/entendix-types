@@ -7,4 +7,8 @@ export enum SubmodelValueTypes {
   NAMEPLATE = 'Nameplate',
   BACNET = 'BACnetDatapointsInformation',
   TRADE_INFORMATION = 'TradeInformation',
+  PLANT = 'PlantInformation',
+  MODULE = 'ModuleInformation',
+  MEDIUM = 'MediumInformation',
+  AGGREGATE = 'AggregateInformation',
 }
