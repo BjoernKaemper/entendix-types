@@ -8,6 +8,7 @@ import type { Module } from '../module/Module';
  * @property {Object} data - The data of the plant
  * @property {string} data.plantName - The name of the plant
  * @property {string} data.plantType - The type of the plant
+ * @property {string} data.aasSemanticIdentifier - The AAS semantic identifier of the plant
  * @property {ConditionTypes} data.condition - The condition of the plant
  * @property {Array<Module>} data.modules - The modules of the plant
  */
@@ -17,6 +18,7 @@ export interface Plant {
     plantName: string;
     plantType: string;
     condition?: ConditionTypes;
+    aasSemanticIdentifier?: string;
     modules?: Array<Module>;
   };
 }

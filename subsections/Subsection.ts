@@ -10,14 +10,22 @@ import type { Plant } from '../plant/Plant';
  * @property {string} data.tradeName - The trade name of the subsection
  * @property {string} data.tradeType - The trade type of the subsection
  * @property {Array<Plant>} data.plants - The plants of the subsection
+ * @property {Array<PlantsByType>} [data.plantsByType] - The plants of the subsection by type
  * @see {@link SubsectionPlant}
  */
 export interface Subsection {
   id: string;
   data: {
-    condition: ConditionTypes
+    condition: ConditionTypes;
     tradeName: string;
     tradeType: string;
-    plants: Array<Plant>
-  }
+    plants: Array<Plant>;
+    plantsByType?: Array<PlantsByType>;
+  };
+}
+
+interface PlantsByType {
+  type: string;
+  name: string;
+  plants: Array<Plant>;
 }
