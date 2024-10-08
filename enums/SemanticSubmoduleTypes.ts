@@ -8,6 +8,7 @@ export enum SemanticSubmoduleTypes {
   BUILDUNG_AUTOMATION_SYSTEM = 'Gebäudeautomationssystem',
   // Plants
   VENTILATION_PLANT = 'Lüftungsanlagen',
+  NO_LABEL = 'Keine Bezeichnung',
   // Modules
   PRE_HEATER = 'Vorerhitzer',
   HEAT_RECOVERY = 'Wärmerückgewinnung',
