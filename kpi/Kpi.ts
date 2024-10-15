@@ -1,4 +1,4 @@
-import { TimelineDataPoint } from "../timeline/Timeline";
+import { TimelineDataPoint } from '../timeline/Timeline';
 
 /**
  * Language string type
