@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+
 /**
  * Timeline Date Point Interface
  * @typedef {Object} TimelineDataPoint
@@ -6,7 +7,7 @@ import { DateTime } from 'luxon';
  * @property {number} value - The value of the data point
  * @see {@link DateTime}
  */
-export interface TimelineDataPoint {
+export type TimelineDataPoint = {
   timestamp: DateTime;
   value: number;
 }
