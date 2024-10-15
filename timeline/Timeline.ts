@@ -10,4 +10,4 @@ import { DateTime } from 'luxon';
 export type TimelineDataPoint = {
   timestamp: DateTime;
   value: number;
-}
+};
