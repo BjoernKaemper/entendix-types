@@ -1,3 +1,5 @@
+import type { TimelineDataPoint } from '../timeline/Timeline';
+
 /**
  * Language string type
  * @typedef {Object} LangString
@@ -97,4 +99,5 @@ export type Kpi = {
     calculationCycle: number;
     annotations: Array<Annotation>;
   };
+  timeline?: Array<TimelineDataPoint>;
 };
