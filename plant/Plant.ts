@@ -42,5 +42,6 @@ export interface Plant {
     modules?: Array<Module>;
     stati?: Array<PlantStatus>;
     alerts?: Array<PlantAlerts>;
+    aasSemanticIdentifier?: string;
   };
 }
