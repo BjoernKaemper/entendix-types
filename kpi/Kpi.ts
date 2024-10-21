@@ -101,8 +101,8 @@ export type Kpi = {
     limits: Array<string>; // TODO: Define type
     calculationCycle: number;
     annotations: Array<Annotation>;
+    type?: string;
+    condition?: ConditionTypes;
   };
   timeline?: Array<TimelineDataPoint>;
-  type?: string;
-  condition?: ConditionTypes;
 };
