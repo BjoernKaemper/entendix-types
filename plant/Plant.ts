@@ -1,5 +1,26 @@
 import { ConditionTypes } from '../enums/ConditionTypes';
+import { LangString } from '../kpi/Kpi';
 import type { Module } from '../module/Module';
+
+/**
+ * Plant status interface
+ * @typedef {Object} PlantStatus
+ * @property {string} name - The name of the plant status
+ * @property {LangString} description - The description of the plant status
+ * @property {ConditionTypes} condition - The condition of the plant status
+ */
+export interface PlantStatus {
+  name: string;
+  description: LangString;
+  condition: ConditionTypes;
+}
+
+export interface PlantAlerts {
+  title: string;
+  description: string;
+  type: 'error';
+  time: string;
+}
 
 /**
  * Plant interface
@@ -11,14 +32,15 @@ import type { Module } from '../module/Module';
  * @property {string} data.aasSemanticIdentifier - The AAS semantic identifier of the plant
  * @property {ConditionTypes} data.condition - The condition of the plant
  * @property {Array<Module>} data.modules - The modules of the plant
- */
+*/
 export interface Plant {
   id: string;
   data: {
     plantName: string;
     plantType: string;
     condition?: ConditionTypes;
-    aasSemanticIdentifier?: string;
     modules?: Array<Module>;
+    stati?: Array<PlantStatus>;
+    alerts?: Array<PlantAlerts>;
   };
 }
