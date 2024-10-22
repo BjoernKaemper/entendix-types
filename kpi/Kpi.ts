@@ -85,9 +85,9 @@ export type Annotation = {
  * @property {Array} data.limits - The limits of the KPI
  * @property {number} data.calculationCycle - The calculation cycle of the KPI
  * @property {Array} data.annotations - The annotations of the KPI
+ * @property {string} data.type - The type of the KPI
+ * @property {ConditionTypes} data.condition - The condition of the KPI
  * @property {Array<TimelineDataPoint>} timeline - The timeline of the KPI
- * @property {string} type - The type of the KPI
- * @property {ConditionTypes} condition - The condition of the KPI
  */
 export type Kpi = {
   id: string;

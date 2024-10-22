@@ -15,6 +15,14 @@ export interface PlantStatus {
   condition: ConditionTypes;
 }
 
+/**
+ * Plant Alert interface
+ * @typedef {Object} PlantAlert
+ * @property {string} title - The title of the plant alert
+ * @property {string} description - The description of the plant alert
+ * @property {'error'} type - The type of the plant alert
+ * @property {string} time - The time of the plant alert
+ */
 export interface PlantAlert {
   title: string;
   description: string;
