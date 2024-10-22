@@ -15,7 +15,7 @@ export interface PlantStatus {
   condition: ConditionTypes;
 }
 
-export interface PlantAlerts {
+export interface PlantAlert {
   title: string;
   description: string;
   type: 'error';
@@ -32,6 +32,8 @@ export interface PlantAlerts {
  * @property {string} data.aasSemanticIdentifier - The AAS semantic identifier of the plant
  * @property {ConditionTypes} data.condition - The condition of the plant
  * @property {Array<Module>} data.modules - The modules of the plant
+ * @property {Array<PlantStatus>} data.stati - The stati of the plant
+ * @property {Array<PlantAlert>} data.alerts - The alerts of the plant
 */
 export interface Plant {
   id: string;
@@ -41,7 +43,7 @@ export interface Plant {
     condition?: ConditionTypes;
     modules?: Array<Module>;
     stati?: Array<PlantStatus>;
-    alerts?: Array<PlantAlerts>;
+    alerts?: Array<PlantAlert>;
     aasSemanticIdentifier?: string;
   };
 }
