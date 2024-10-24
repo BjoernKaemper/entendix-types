@@ -1,5 +1,5 @@
 import { ConditionTypes } from '../enums/ConditionTypes';
-import { LangString } from '../kpi/Kpi';
+import type { LangString } from '../kpi/Kpi';
 import type { Module } from '../module/Module';
 
 /**
