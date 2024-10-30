@@ -39,16 +39,18 @@ export interface PlantAlert {
  * @property {string} data.plantType - The type of the plant
  * @property {string} data.aasSemanticIdentifier - The AAS semantic identifier of the plant
  * @property {ConditionTypes} data.condition - The condition of the plant
+ * @property {string} data.parentType - The type of the parent of the plant
  * @property {Array<Module>} data.modules - The modules of the plant
  * @property {Array<PlantStatus>} data.stati - The stati of the plant
  * @property {Array<PlantAlert>} data.alerts - The alerts of the plant
-*/
+ */
 export interface Plant {
   id: string;
   data: {
     plantName: string;
     plantType: string;
     condition?: ConditionTypes;
+    parentType: string;
     modules?: Array<Module>;
     stati?: Array<PlantStatus>;
     alerts?: Array<PlantAlert>;
