@@ -27,5 +27,8 @@ export interface SiteRaw {
   data: {
     Address: SiteAddressRaw;
     SiteName: string;
+    SiteImage: {
+      value: string;
+    };
   };
 }
