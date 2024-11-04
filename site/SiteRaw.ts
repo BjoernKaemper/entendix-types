@@ -21,6 +21,7 @@ interface SiteAddressRaw extends Array<SiteAddressRawItem> {}
  * @property {string} id - The unique identifier of the site
  * @property {SiteAddressRaw} data - The data of the site
  * @property {string} data.SiteName - The name of the site
+ * @property {string} data.SiteImage.value - The image source of the siteImage
  */
 export interface SiteRaw {
   id: string;
