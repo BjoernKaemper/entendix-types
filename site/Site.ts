@@ -6,11 +6,13 @@ import type { Building } from '../building/Building';
  * @typedef {Object} SiteData
  * @property {AddressWithGeoLatLong} address - The address of the site
  * @property {string} siteName - The name of the site
+ * @property {string} imagesrc - The image source of the site
  * @see {@link AddressWithGeoLatLong}
  */
 interface SiteData {
-  address: AddressWithGeoLatLong
+  address: AddressWithGeoLatLong;
   siteName: string;
+  imagesrc?: string;
 }
 
 /**
