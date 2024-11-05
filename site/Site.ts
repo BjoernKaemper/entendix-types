@@ -52,11 +52,11 @@ export interface SiteWithBuildinginformation {
 /**
  * Flat object of changeable props for a site for adding/editing a site
  */
-export interface FlatSideData extends Address {
+export interface FlatSiteData extends Address {
   siteName: string;
 }
 
 /**
  * Partial FlatSideData object for updating a site
  */
-export type SiteUpdateData = Partial<FlatSideData>;
+export type SiteUpdateData = Partial<FlatSiteData>;
