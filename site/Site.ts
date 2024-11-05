@@ -1,4 +1,4 @@
-import type { AddressWithGeoLatLong } from '../general/Address';
+import type { Address, AddressWithGeoLatLong } from '../general/Address';
 import type { Building } from '../building/Building';
 
 /**
@@ -48,3 +48,15 @@ export interface SiteWithBuildinginformation {
   id: string;
   data: SiteDataWithBuildingInformation;
 }
+
+/**
+ * Flat object of changeable props for a site for adding/editing a site
+ */
+export interface FlatSideData extends Address {
+  siteName: string;
+}
+
+/**
+ * Partial FlatSideData object for updating a site
+ */
+export type SiteUpdateData = Partial<FlatSideData>;
