@@ -68,7 +68,7 @@ export type Plant = BasicPlant & {
 };
 
 /** Props of a plant that can (currently) be updated */
-export interface PLantUpdateData {
+export interface PlantUpdateData {
   /** Name of the plant */
   plantName?: string;
   /** The type of the plant */
