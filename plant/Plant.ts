@@ -31,12 +31,24 @@ export interface PlantAlert {
 }
 
 /**
- * Plant interface
- * @typedef {Object} Plant
+ * Base plant interface
+ * @typedef {Object} BasicPlant
  * @property {string} id - The id of the plant
  * @property {Object} data - The data of the plant
  * @property {string} data.plantName - The name of the plant
  * @property {string} data.plantType - The type of the plant
+ */
+export interface BasicPlant {
+  id: string;
+  data: {
+    plantName: string;
+    plantType: string;
+  };
+}
+
+/**
+ * Extended plant interface
+ * @typedef {Object} Plant
  * @property {string} data.aasSemanticIdentifier - The AAS semantic identifier of the plant
  * @property {ConditionTypes} data.condition - The condition of the plant
  * @property {string} data.parentType - The type of the parent of the plant
@@ -44,11 +56,8 @@ export interface PlantAlert {
  * @property {Array<PlantStatus>} data.stati - The stati of the plant
  * @property {Array<PlantAlert>} data.alerts - The alerts of the plant
  */
-export interface Plant {
-  id: string;
+export type Plant = BasicPlant & {
   data: {
-    plantName: string;
-    plantType: string;
     condition?: ConditionTypes;
     parentType: string;
     modules?: Array<Module>;
@@ -56,4 +65,12 @@ export interface Plant {
     alerts?: Array<PlantAlert>;
     aasSemanticIdentifier?: string;
   };
+};
+
+/** Props of a plant that can (currently) be updated */
+export interface PLantUpdateData {
+  /** Name of the plant */
+  plantName?: string;
+  /** The type of the plant */
+  plantType?: string;
 }
