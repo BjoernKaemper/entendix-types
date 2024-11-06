@@ -56,6 +56,17 @@ export interface FlatSiteData extends Address {
   siteName: string;
 }
 
+
+/**
+ * Flat object of changeable props for a site for adding/editing a site
+ */
+export interface SiteCreateData extends Address {
+  siteName: string;
+  companyId: string;
+  longitude?: string;
+  lattitude?: string;
+}
+
 /**
  * Partial FlatSideData object for updating a site
  */
