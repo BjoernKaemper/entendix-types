@@ -1,4 +1,4 @@
-import type { AddressWithGeoLatLong } from '../general/Address';
+import type { AddressWithGeoLatLong, Address } from '../general/Address';
 import type { BuildingSubsection } from './BuildingSubsection';
 
 /**
@@ -24,3 +24,18 @@ export interface Building {
     subsections?: Array<BuildingSubsection>;
   };
 }
+
+/**
+ * Flat object of changeable props for a building for adding/editing a building
+ */
+export interface FlatBuildingData extends Address {
+  buildingName: string;
+  usableSpace: number;
+  buildingVolume: number;
+  quantityFloors: number;
+}
+
+/**
+ * Partial FlatBuildingData object for updating a building
+ */
+export type BuildingUpdateData = Partial<FlatBuildingData>;
