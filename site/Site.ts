@@ -60,11 +60,9 @@ export interface FlatSiteData extends Address {
 /**
  * Flat object of changeable props for a site for adding/editing a site
  */
-export interface SiteCreateData extends Address {
+export interface SiteCreateData extends AddressWithGeoLatLong {
   siteName: string;
   companyId: string;
-  longitude: string;
-  lattitude: string;
 }
 
 /**
