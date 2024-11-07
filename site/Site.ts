@@ -63,8 +63,8 @@ export interface FlatSiteData extends Address {
 export interface SiteCreateData extends Address {
   siteName: string;
   companyId: string;
-  longitude?: string;
-  lattitude?: string;
+  longitude: string;
+  lattitude: string;
 }
 
 /**

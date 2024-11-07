@@ -22,6 +22,6 @@ export interface Address {
  * @see {@link Address}
  */
 export interface AddressWithGeoLatLong extends Address {
-  longitude?: string;
-  lattitude?: string;
+  longitude: string;
+  lattitude: string;
 }
