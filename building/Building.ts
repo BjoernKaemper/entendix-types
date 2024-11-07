@@ -29,9 +29,13 @@ export interface Building {
  * Flat object of changeable props for a building for adding/editing a building
  */
 export interface FlatBuildingData extends Address {
+  /** The name of the building */
   buildingName: string;
+  /** The usable space of the building */
   usableSpace: number;
+  /** The volume of the building */
   buildingVolume: number;
+  /** The quantity of floors of the building */
   quantityFloors: number;
 }
 

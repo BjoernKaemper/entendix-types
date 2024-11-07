@@ -11,7 +11,7 @@ export interface BACnetDatapoint {
 }
 
 /**
- * @typedef {Object} Aggregate
+ * Base interface for an aggregate
  * @property {string} id - The id of the aggregate
  * @property {Object} data - The data of the aggregate
  * @property {string} data.aggregateName - The name of the aggregate
@@ -26,8 +26,7 @@ export interface BasicAggregate {
 }
 
 /**
- * Aggregate interface
- * @typedef {Object} Aggregate
+ * Extended aggregate interface
  * @property {ConditionTypes} data.condition - The condition of the aggregate
  * @property {Object} data.dataPoints - The data points of the aggregate
  */
