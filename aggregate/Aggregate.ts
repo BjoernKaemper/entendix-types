@@ -11,20 +11,27 @@ export interface BACnetDatapoint {
 }
 
 /**
- * Aggregate interface
- * @typedef {Object} Aggregate
+ * Base interface for an aggregate
  * @property {string} id - The id of the aggregate
  * @property {Object} data - The data of the aggregate
  * @property {string} data.aggregateName - The name of the aggregate
  * @property {string} data.aggregateType - The type of the aggregate
- * @property {ConditionTypes} data.condition - The condition of the aggregate
- * @property {Object} data.dataPoints - The data points of the aggregate
  */
-export interface Aggregate {
+export interface BasicAggregate {
   id: string;
   data: {
     aggregateName: string;
     aggregateType: string;
+  };
+}
+
+/**
+ * Extended aggregate interface
+ * @property {ConditionTypes} data.condition - The condition of the aggregate
+ * @property {Object} data.dataPoints - The data points of the aggregate
+ */
+export type Aggregate = BasicAggregate & {
+  data: {
     condition?: ConditionTypes;
     dataPoints?: {
       [key: string]: {
@@ -42,4 +49,12 @@ export interface Aggregate {
       };
     };
   };
+}
+
+/** Props of a aggregate can (currently) be updated */
+export interface AggregateUpdateData {
+  /** Name of the aggregate */
+  aggregateName?: string;
+  /** The type of the aggregate */
+  aggregateType?: string;
 }
