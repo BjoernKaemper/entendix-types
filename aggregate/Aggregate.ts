@@ -31,11 +31,8 @@ export interface BasicAggregate {
  * @property {ConditionTypes} data.condition - The condition of the aggregate
  * @property {Object} data.dataPoints - The data points of the aggregate
  */
-export interface Aggregate {
-  id: string;
+export type Aggregate = BasicAggregate & {
   data: {
-    aggregateName: string;
-    aggregateType: string;
     condition?: ConditionTypes;
     dataPoints?: {
       [key: string]: {
