@@ -24,7 +24,6 @@ export interface BaseBuilding {
 export type Building = BaseBuilding & {
   data: {
     address?: AddressWithGeoLatLong;
-    usableSpace: number;
     buildingVolume?: number;
     quantityFloors?: number;
     subsections?: Array<BuildingSubsection>;
