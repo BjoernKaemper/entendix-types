@@ -18,5 +18,19 @@ export interface Module {
     moduleType: string;
     condition?: ConditionTypes;
     mediums?: Array<Medium>;
+    dataPoints?: {
+      [key: string]: {
+        presentValue: string;
+        description: {
+          de: string;
+          en: string;
+        };
+        unit: string;
+        dataSource: {
+          type: string;
+          value: string;
+        }[];
+      };
+    };
   };
 }
