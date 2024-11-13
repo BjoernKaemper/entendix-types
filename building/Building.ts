@@ -13,22 +13,18 @@ import type { BuildingSubsection } from './BuildingSubsection';
  * @property {number} data.quantityFloors - The quantity of floors of the building
  * @property {Array<BuildingSubsection>} [data.subsections] - The subsections of the building
  */
-export interface BaseBuilding {
+
+export type Building = {
   id: string;
   data: {
     buildingName: string;
     usableSpace: number;
-  };
-}
-
-export type Building = BaseBuilding & {
-  data: {
     address?: AddressWithGeoLatLong;
     buildingVolume?: number;
     quantityFloors?: number;
     subsections?: Array<BuildingSubsection>;
   };
-}
+};
 
 /**
  * Flat object of changeable props for a building for adding/editing a building
@@ -49,11 +45,10 @@ export interface FlatBuildingData extends Address {
  */
 export type BuildingUpdateData = Partial<FlatBuildingData>;
 
-
 /**
  * Flat object of changeable props for a building for creating a building
  */
-export interface FlatBuildingCreateData {
+export interface FlatBuildingCreateData extends AddressWithGeoLatLong {
   /** The name of the building */
   buildingName: string;
   /** The usable space of the building */
